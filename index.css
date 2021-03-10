@@ -32,6 +32,7 @@ html {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -153,11 +154,11 @@ nav {
 }
 
 .heroImage {
-    flex: 1 1 40rem;
     background: linear-gradient(#dad8dd, #dad1d4);
+    flex: 1 1 40rem;
+    background-color: black;
     position: relative;
     z-index: -3;
-    height: 100%;
 }
 
 .plant {
@@ -279,6 +280,12 @@ nav {
     height: 22%;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.formWapper form input {
+    background-color: var(--background-color);
+    padding: 0.7rem 1.5rem;
+    color: white;
 }
 
 .formBtn {
@@ -429,8 +436,19 @@ nav {
 
     /* FOOTER */
     .footerEnd {
-        padding: 2rem 1rem;
+        padding: 2rem 6rem;
         text-align: center;
+
+    }
+
+    .footerEnd h4 {
+        order: 2;
+        font-size: 2.5rem;
+    }
+
+    .footerEnd ul {
+        order: 1;
+        margin-bottom: 1rem;
     }
 
 }
